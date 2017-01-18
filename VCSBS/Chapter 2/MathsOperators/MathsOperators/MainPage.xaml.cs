@@ -61,19 +61,19 @@ namespace MathsOperators
 
         private void addValues()
         {
-            int lhs = int.Parse(lhsOperand.Text);
-            int rhs = int.Parse(rhsOperand.Text);
-            int outcome = 0;
+            int lhs = int.Parse(lhsOperand.Text);  //declares an int variable called "lhs", and initializes it with the integer corresponding to the value typed in the lhsOperand box. 
+            int rhs = int.Parse(rhsOperand.Text);  //declares an int variable called "rhs", and initializes it with the integer corresponding to the value typed in the rhsOperand box, after converting it to an int. 
+            int outcome = lhs + rhs;  //declares an int called "outcome" and assigns a value of lhs + rhs to it.
             // TODO: Add rhs to lhs and store the result in outcome
-            expression.Text = $"{lhsOperand.Text} + {rhsOperand.Text}";
-            result.Text = outcome.ToString();
+            expression.Text = $"{lhsOperand.Text} + {rhsOperand.Text}"; //uses string interpolation to construct a string, performs the calcuation, and assigns the resuult to the "expression.Text" property.
+            result.Text = outcome.ToString();  //displays the calculation result by assigning it to the "Text" property in the "Result" box.
         }
 
         private void subtractValues()
         {
             int lhs = int.Parse(lhsOperand.Text);
             int rhs = int.Parse(rhsOperand.Text);
-            int outcome = 0;
+            int outcome = lhs - rhs;
             // TODO: Subtract rhs from lhs and store the result in outcome
             expression.Text = $"{lhsOperand.Text} - {rhsOperand.Text}";
             result.Text = outcome.ToString();
@@ -83,7 +83,7 @@ namespace MathsOperators
         {
             int lhs = int.Parse(lhsOperand.Text);
             int rhs = int.Parse(rhsOperand.Text);
-            int outcome = 0;
+            int outcome = lhs * rhs;
             // TODO: Multiply lhs by rhs and store the result in outcome
             expression.Text = $"{lhsOperand.Text} * {rhsOperand.Text}";
             result.Text = outcome.ToString();
@@ -93,7 +93,7 @@ namespace MathsOperators
         {
             int lhs = int.Parse(lhsOperand.Text);
             int rhs = int.Parse(rhsOperand.Text);
-            int outcome = 0;
+            int outcome = lhs / rhs;
             // TODO: Divide lhs by rhs and store the result in outcome
             expression.Text = $"{lhsOperand.Text} / {rhsOperand.Text}";
             result.Text = outcome.ToString();
@@ -103,7 +103,7 @@ namespace MathsOperators
         {
             int lhs = int.Parse(lhsOperand.Text);
             int rhs = int.Parse(rhsOperand.Text);
-            int outcome = 0;
+            int outcome = lhs % rhs;
             // TODO: Work out the remainder after dividing lhs by rhs and store the result in outcome
             expression.Text = $"{lhsOperand.Text} % {rhsOperand.Text}";
             result.Text = outcome.ToString();
