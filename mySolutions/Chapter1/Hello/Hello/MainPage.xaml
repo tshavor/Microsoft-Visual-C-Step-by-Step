@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.501,0.504">
         <TextBlock x:Name="UserName" HorizontalAlignment="Left" Margin="10,58,0,0" TextWrapping="Wrap" Text="Please enter your name" VerticalAlignment="Top" Height="66" Width="340" FontSize="32" ></TextBlock>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="10,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="239" Height="32"/>
-        <Button x:Name="OK" Content="OK" HorizontalAlignment="Left" Margin="254,129,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.022,-0.77"/>
+        <TextBox x:Name="userName" HorizontalAlignment="Left" Margin="10,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="239" Height="32"/>
+        <Button x:Name="OK" Content="OK" HorizontalAlignment="Left" Margin="254,129,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.022,-0.77" Click="okClick"/>
     </Grid>
 </Page>
