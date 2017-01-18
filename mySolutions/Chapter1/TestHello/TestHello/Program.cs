@@ -15,3 +15,10 @@ namespace TestHello             //name of our project, also becomes the top leve
         }
     }
 }
+
+/*  Note: the "using" directive simply brings items in a namespace into SCOPE and frees us from having to fully qualify 
+ *  the names of classes in our code.
+ * 
+ * ex: Console.Writeline = System.Console.Writeline
+ * 
+ * /
