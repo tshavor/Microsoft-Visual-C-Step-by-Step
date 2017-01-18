@@ -61,7 +61,9 @@ namespace PrimitiveDataTypes
 
         private void showIntValue()
         {
-            value.Text = "to do";
+            int intVar;
+            intVar = 42;
+            value.Text = intVar.ToString();
         }
 
         private void showLongValue()
@@ -73,14 +75,18 @@ namespace PrimitiveDataTypes
 
         private void showFloatValue()
         {
-            float floatVar;
-            floatVar = 0.42F;
-            value.Text = floatVar.ToString();
+            float floatVar;  //declares a variable named "floatVar" of the primitive type "float"
+            floatVar = 0.42F;  //assigns "floatVar" the value of 0.42F
+            value.Text = floatVar.ToString();  //displays the value of this variable in the value text box on the form.
+                                                //the data that you put into the text box must be in STRING format (and not a number)
+                                                //or it won't compile!
         }
 
         private void showDoubleValue()
         {
-            value.Text = "to do";
+            double doubleVar;
+            doubleVar = 0.42;
+            value.Text = doubleVar.ToString();
         }
 
         private void showDecimalValue()
@@ -106,7 +112,9 @@ namespace PrimitiveDataTypes
 
         private void showBoolValue()
         {
-            value.Text = "to do";
+            bool boolVar;
+            boolVar = false;
+            value.Text = boolVar.ToString();
         }
     }
 }
